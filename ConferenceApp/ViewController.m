@@ -11,6 +11,7 @@
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *FirstNameTextField;
 @property (weak, nonatomic) IBOutlet UITextField *LastNameTextField;
+@property (weak, nonatomic) IBOutlet UILabel *Title;
 
 @end
 
@@ -19,6 +20,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    PFQuery *query = [PFQuery queryWithClassName:@"Conference"];
+    PFObject *obj = [query getObjectWithId:@"AEkqi6mFVw"];
+    _Title.text = [obj objectForKey:@"ConferenceName"];
+    
 }
 
 - (void)didReceiveMemoryWarning {
