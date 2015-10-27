@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AFCBA3701BDDFA8800F6E31A /* Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCBA36F1BDDFA8800F6E31A /* Settings.m */; };
 		AFF21B0E1BCF517B00ADF5B6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF21B0D1BCF517B00ADF5B6 /* main.m */; };
 		AFF21B111BCF517B00ADF5B6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF21B101BCF517B00ADF5B6 /* AppDelegate.m */; };
 		AFF21B141BCF517B00ADF5B6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF21B131BCF517B00ADF5B6 /* ViewController.m */; };
@@ -39,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AFCBA36E1BDDFA8800F6E31A /* Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
+		AFCBA36F1BDDFA8800F6E31A /* Settings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Settings.m; sourceTree = "<group>"; };
 		AFF21B081BCF517B00ADF5B6 /* ConferenceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConferenceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFF21B0C1BCF517B00ADF5B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFF21B0D1BCF517B00ADF5B6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -116,6 +119,8 @@
 		AFF21B0A1BCF517B00ADF5B6 /* ConferenceApp */ = {
 			isa = PBXGroup;
 			children = (
+				AFCBA36F1BDDFA8800F6E31A /* Settings.m */,
+				AFCBA36E1BDDFA8800F6E31A /* Settings.h */,
 				AFF21B311BDDCE3300ADF5B6 /* Frameworks */,
 				AFF21B0F1BCF517B00ADF5B6 /* AppDelegate.h */,
 				AFF21B101BCF517B00ADF5B6 /* AppDelegate.m */,
@@ -260,6 +265,7 @@
 			files = (
 				AFF21B141BCF517B00ADF5B6 /* ViewController.m in Sources */,
 				AFF21B111BCF517B00ADF5B6 /* AppDelegate.m in Sources */,
+				AFCBA3701BDDFA8800F6E31A /* Settings.m in Sources */,
 				AFF21B0E1BCF517B00ADF5B6 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -464,6 +470,7 @@
 				AFF21B2D1BCF517B00ADF5B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AFF21B2E1BCF517B00ADF5B6 /* Build configuration list for PBXNativeTarget "ConferenceAppTests" */ = {
 			isa = XCConfigurationList;
@@ -472,6 +479,7 @@
 				AFF21B301BCF517B00ADF5B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
