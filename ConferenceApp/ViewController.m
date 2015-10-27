@@ -21,7 +21,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     PFQuery *query = [PFQuery queryWithClassName:@"Conference"];
-    PFObject *obj = [query getObjectWithId:@"AEkqi6mFVw"];
+    PFObject *obj = [query getObjectWithId:@"vebdsnsQhr"];
     _Title.text = [obj objectForKey:@"ConferenceName"];
     
 }

@@ -17,8 +17,9 @@
     
     NSString *titleString = _TitleField.text;
     
-    PFObject* obj = [PFObject objectWithClassName:@"Conference"];
-    obj[@"ConferenceName"] = titleString;
+    PFObject* obj = [PFObject objectWithoutDataWithClassName:@"Conference" objectId:@"vebdsnsQhr"];
+    [obj setObject:titleString forKey:@"ConferenceName"];
+    //obj[@"ConferenceName"] = titleString;
     [obj saveInBackgroundWithBlock:^(BOOL succeeded , NSError *error){
         if(succeeded == YES)
         {
