@@ -91,6 +91,10 @@
     NSString *lastName = _LastNameTextField.text;
     NSString *email = _EmailTextField.text;
     NSString *conferenceTitle = _Title.text;
+    _FirstNameTextField.text = nil;
+    _LastNameTextField.text = nil;
+    _EmailTextField.text = nil;
+    
     
     NSString *url_str = @"https://docs.google.com/a/ncsu.edu/forms/d/1F9eTOqbkORAwVRiX5IWwAJB-cl-g59jmWvKhwP1PWME/formResponse";
    // NSString *url_str = @"https://docs.google.com/a/ncsu.edu/forms/d/1uCBhYFReAWbEmLD6LfQCoytnj-bkJueWGNLeTvdz1TI/formResponse";
@@ -102,7 +106,10 @@
     //[vars setObject:lastName forKey:@"entry.364263865"];
     [vars setObject:lastName forKey:@"entry.1046609313"];
     [vars setObject:email forKey:@"entry.1210214913"];
-    
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Success" message:@"Successfully Registered!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+    [alert show];
     [self send_url_encoded_http_post_request:url_str vars:vars];}
+
+
 
 @end

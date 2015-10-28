@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Register-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
@@ -81,7 +81,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="7EB-4o-Fb2"/>
+                    <navigationItem key="navigationItem" title="Register" id="7EB-4o-Fb2"/>
                     <connections>
                         <outlet property="EmailTextField" destination="tCm-US-EqA" id="XkW-5Y-OwN"/>
                         <outlet property="FirstNameTextField" destination="3Vr-mk-onm" id="dln-Km-foz"/>
@@ -93,7 +93,7 @@
             </objects>
             <point key="canvasLocation" x="666" y="231"/>
         </scene>
-        <!--Login Admin-->
+        <!--Login-->
         <scene sceneID="3N7-4q-yq4">
             <objects>
                 <viewController id="JBV-Q3-zGU" customClass="LoginAdmin" sceneMemberID="viewController">
@@ -140,7 +140,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="9rQ-oW-X77"/>
+                    <navigationItem key="navigationItem" title="Login" id="9rQ-oW-X77"/>
                     <connections>
                         <outlet property="AdminPassword" destination="9GS-XS-y94" id="wgD-pL-1Oo"/>
                         <outlet property="AdminUserName" destination="BmL-6N-izD" id="rs9-t4-64F"/>
@@ -151,7 +151,7 @@
             </objects>
             <point key="canvasLocation" x="1028" y="172"/>
         </scene>
-        <!--Settings-->
+        <!--Set Conference Title-->
         <scene sceneID="FOk-QE-2gx">
             <objects>
                 <viewController id="kOp-xc-0YU" customClass="Settings" sceneMemberID="viewController">
@@ -185,7 +185,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="TSW-j8-TPj"/>
+                    <navigationItem key="navigationItem" title="Set Conference Title" id="TSW-j8-TPj"/>
                     <connections>
                         <outlet property="TitleField" destination="C9S-rU-JKn" id="eBK-45-Zis"/>
                     </connections>
