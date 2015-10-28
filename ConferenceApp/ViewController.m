@@ -90,12 +90,14 @@
     NSString *firstName = _FirstNameTextField.text;
     NSString *lastName = _LastNameTextField.text;
     NSString *email = _EmailTextField.text;
+    NSString *conferenceTitle = _Title.text;
     
     NSString *url_str = @"https://docs.google.com/a/ncsu.edu/forms/d/1F9eTOqbkORAwVRiX5IWwAJB-cl-g59jmWvKhwP1PWME/formResponse";
    // NSString *url_str = @"https://docs.google.com/a/ncsu.edu/forms/d/1uCBhYFReAWbEmLD6LfQCoytnj-bkJueWGNLeTvdz1TI/formResponse";
     
     NSMutableDictionary *vars = [NSMutableDictionary new];
     //[vars setObject:firstName forKey:@"entry.365165179"];
+    [vars setObject:conferenceTitle forKey:@"entry.395481797"];
     [vars setObject:firstName forKey:@"entry.773487746"];
     //[vars setObject:lastName forKey:@"entry.364263865"];
     [vars setObject:lastName forKey:@"entry.1046609313"];
