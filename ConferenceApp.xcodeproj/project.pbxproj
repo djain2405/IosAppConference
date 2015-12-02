@@ -10,6 +10,7 @@
 		AFCBA3701BDDFA8800F6E31A /* Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCBA36F1BDDFA8800F6E31A /* Settings.m */; };
 		AFCBA3791BE07BD000F6E31A /* LoginAdmin.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCBA3781BE07BD000F6E31A /* LoginAdmin.m */; };
 		AFCBA37F1C0EB23800F6E31A /* UpdateLoginDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCBA37E1C0EB23800F6E31A /* UpdateLoginDetails.m */; };
+		AFCBA3821C0EBC8C00F6E31A /* UpdateUrls.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCBA3811C0EBC8C00F6E31A /* UpdateUrls.m */; };
 		AFF21B0E1BCF517B00ADF5B6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF21B0D1BCF517B00ADF5B6 /* main.m */; };
 		AFF21B111BCF517B00ADF5B6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF21B101BCF517B00ADF5B6 /* AppDelegate.m */; };
 		AFF21B141BCF517B00ADF5B6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF21B131BCF517B00ADF5B6 /* ViewController.m */; };
@@ -48,6 +49,8 @@
 		AFCBA3781BE07BD000F6E31A /* LoginAdmin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginAdmin.m; sourceTree = "<group>"; };
 		AFCBA37D1C0EB23800F6E31A /* UpdateLoginDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpdateLoginDetails.h; sourceTree = "<group>"; };
 		AFCBA37E1C0EB23800F6E31A /* UpdateLoginDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpdateLoginDetails.m; sourceTree = "<group>"; };
+		AFCBA3801C0EBC8C00F6E31A /* UpdateUrls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpdateUrls.h; sourceTree = "<group>"; };
+		AFCBA3811C0EBC8C00F6E31A /* UpdateUrls.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpdateUrls.m; sourceTree = "<group>"; };
 		AFF21B081BCF517B00ADF5B6 /* ConferenceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConferenceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFF21B0C1BCF517B00ADF5B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFF21B0D1BCF517B00ADF5B6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -140,6 +143,8 @@
 				AFCBA3781BE07BD000F6E31A /* LoginAdmin.m */,
 				AFCBA37D1C0EB23800F6E31A /* UpdateLoginDetails.h */,
 				AFCBA37E1C0EB23800F6E31A /* UpdateLoginDetails.m */,
+				AFCBA3801C0EBC8C00F6E31A /* UpdateUrls.h */,
+				AFCBA3811C0EBC8C00F6E31A /* UpdateUrls.m */,
 			);
 			path = ConferenceApp;
 			sourceTree = "<group>";
@@ -273,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFCBA3821C0EBC8C00F6E31A /* UpdateUrls.m in Sources */,
 				AFF21B141BCF517B00ADF5B6 /* ViewController.m in Sources */,
 				AFF21B111BCF517B00ADF5B6 /* AppDelegate.m in Sources */,
 				AFCBA3701BDDFA8800F6E31A /* Settings.m in Sources */,
@@ -336,6 +342,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -380,6 +387,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -410,6 +418,7 @@
 					"/Users/Students/Downloads/parse-library-1.9.0",
 				);
 				INFOPLIST_FILE = ConferenceApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -424,6 +433,7 @@
 					"/Users/Students/Downloads/parse-library-1.9.0",
 				);
 				INFOPLIST_FILE = ConferenceApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

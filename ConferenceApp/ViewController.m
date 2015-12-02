@@ -97,18 +97,38 @@
     _LastNameTextField.text = nil;
     _EmailTextField.text = nil;
     
+    PFQuery *query = [PFQuery queryWithClassName:@"Urls"];
+    PFObject *obj = [query getObjectWithId:@"OhZJIFMeJQ"];
+    //_Title.text = [obj objectForKey:@"ConferenceName"];
     
-    NSString *url_str = @"https://docs.google.com/a/ncsu.edu/forms/d/1F9eTOqbkORAwVRiX5IWwAJB-cl-g59jmWvKhwP1PWME/formResponse";
-   // NSString *url_str = @"https://docs.google.com/a/ncsu.edu/forms/d/1uCBhYFReAWbEmLD6LfQCoytnj-bkJueWGNLeTvdz1TI/formResponse";
+    NSString *url_str = [obj objectForKey:@"FormUrl"];
+    // NSString *url_str = @"https://docs.google.com/a/ncsu.edu/forms/d/1uCBhYFReAWbEmLD6LfQCoytnj-bkJueWGNLeTvdz1TI/formResponse";
     
     NSMutableDictionary *vars = [NSMutableDictionary new];
+    NSString *titlekey = [obj objectForKey:@"Title"];
     //[vars setObject:firstName forKey:@"entry.365165179"];
-    [vars setObject:conferenceTitle forKey:@"entry.395481797"];
-    [vars setObject:firstName forKey:@"entry.773487746"];
+    [vars setObject:conferenceTitle forKey:titlekey];
+    NSString *Firstnamekey = [obj objectForKey:@"FirstName"];
+    [vars setObject:firstName forKey:Firstnamekey];
     //[vars setObject:lastName forKey:@"entry.364263865"];
-    [vars setObject:lastName forKey:@"entry.1046609313"];
-    [vars setObject:email forKey:@"entry.1210214913"];
-    [vars setObject:affiliation forKey:@"entry.1676525915"];
+    NSString *Lastnamekey = [obj objectForKey:@"LastName"];
+    [vars setObject:lastName forKey:Lastnamekey];
+    NSString *Emailkey = [obj objectForKey:@"Email"];
+    [vars setObject:email forKey:Emailkey];
+    NSString *Affkey = [obj objectForKey:@"Affiliation"];
+    [vars setObject:affiliation forKey:Affkey];
+    
+//    NSString *url_str = @"https://docs.google.com/a/ncsu.edu/forms/d/1F9eTOqbkORAwVRiX5IWwAJB-cl-g59jmWvKhwP1PWME/formResponse";
+//   // NSString *url_str = @"https://docs.google.com/a/ncsu.edu/forms/d/1uCBhYFReAWbEmLD6LfQCoytnj-bkJueWGNLeTvdz1TI/formResponse";
+//    
+//    NSMutableDictionary *vars = [NSMutableDictionary new];
+//    //[vars setObject:firstName forKey:@"entry.365165179"];
+//    [vars setObject:conferenceTitle forKey:@"entry.395481797"];
+//    [vars setObject:firstName forKey:@"entry.773487746"];
+//    //[vars setObject:lastName forKey:@"entry.364263865"];
+//    [vars setObject:lastName forKey:@"entry.1046609313"];
+//    [vars setObject:email forKey:@"entry.1210214913"];
+//    [vars setObject:affiliation forKey:@"entry.1676525915"];
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Success" message:@"Successfully Registered!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
     [alert show];
     [self send_url_encoded_http_post_request:url_str vars:vars];}
