@@ -12,6 +12,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *FirstNameTextField;
 @property (weak, nonatomic) IBOutlet UITextField *LastNameTextField;
 @property (weak, nonatomic) IBOutlet UITextField *EmailTextField;
+@property (weak, nonatomic) IBOutlet UITextField *AffiliationTextField;
 @property (weak, nonatomic) IBOutlet UILabel *Title;
 
 @end
@@ -91,6 +92,7 @@
     NSString *lastName = _LastNameTextField.text;
     NSString *email = _EmailTextField.text;
     NSString *conferenceTitle = _Title.text;
+    NSString *affiliation = _AffiliationTextField.text;
     _FirstNameTextField.text = nil;
     _LastNameTextField.text = nil;
     _EmailTextField.text = nil;
@@ -106,6 +108,7 @@
     //[vars setObject:lastName forKey:@"entry.364263865"];
     [vars setObject:lastName forKey:@"entry.1046609313"];
     [vars setObject:email forKey:@"entry.1210214913"];
+    [vars setObject:affiliation forKey:@"entry.1676525915"];
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Success" message:@"Successfully Registered!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
     [alert show];
     [self send_url_encoded_http_post_request:url_str vars:vars];}

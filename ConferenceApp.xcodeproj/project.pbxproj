@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		AFCBA3701BDDFA8800F6E31A /* Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCBA36F1BDDFA8800F6E31A /* Settings.m */; };
 		AFCBA3791BE07BD000F6E31A /* LoginAdmin.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCBA3781BE07BD000F6E31A /* LoginAdmin.m */; };
+		AFCBA37F1C0EB23800F6E31A /* UpdateLoginDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCBA37E1C0EB23800F6E31A /* UpdateLoginDetails.m */; };
 		AFF21B0E1BCF517B00ADF5B6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF21B0D1BCF517B00ADF5B6 /* main.m */; };
 		AFF21B111BCF517B00ADF5B6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF21B101BCF517B00ADF5B6 /* AppDelegate.m */; };
 		AFF21B141BCF517B00ADF5B6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF21B131BCF517B00ADF5B6 /* ViewController.m */; };
@@ -45,6 +46,8 @@
 		AFCBA36F1BDDFA8800F6E31A /* Settings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Settings.m; sourceTree = "<group>"; };
 		AFCBA3771BE07BD000F6E31A /* LoginAdmin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginAdmin.h; sourceTree = "<group>"; };
 		AFCBA3781BE07BD000F6E31A /* LoginAdmin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginAdmin.m; sourceTree = "<group>"; };
+		AFCBA37D1C0EB23800F6E31A /* UpdateLoginDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpdateLoginDetails.h; sourceTree = "<group>"; };
+		AFCBA37E1C0EB23800F6E31A /* UpdateLoginDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpdateLoginDetails.m; sourceTree = "<group>"; };
 		AFF21B081BCF517B00ADF5B6 /* ConferenceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConferenceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFF21B0C1BCF517B00ADF5B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFF21B0D1BCF517B00ADF5B6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -135,6 +138,8 @@
 				AFF21B0B1BCF517B00ADF5B6 /* Supporting Files */,
 				AFCBA3771BE07BD000F6E31A /* LoginAdmin.h */,
 				AFCBA3781BE07BD000F6E31A /* LoginAdmin.m */,
+				AFCBA37D1C0EB23800F6E31A /* UpdateLoginDetails.h */,
+				AFCBA37E1C0EB23800F6E31A /* UpdateLoginDetails.m */,
 			);
 			path = ConferenceApp;
 			sourceTree = "<group>";
@@ -273,6 +278,7 @@
 				AFCBA3701BDDFA8800F6E31A /* Settings.m in Sources */,
 				AFF21B0E1BCF517B00ADF5B6 /* main.m in Sources */,
 				AFCBA3791BE07BD000F6E31A /* LoginAdmin.m in Sources */,
+				AFCBA37F1C0EB23800F6E31A /* UpdateLoginDetails.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

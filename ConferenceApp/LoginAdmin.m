@@ -15,6 +15,10 @@
 
 @end
 @implementation LoginAdmin
+- (IBAction)UpdatePassword:(id)sender {
+    
+    
+}
 - (IBAction)OnLogin:(id)sender {
     NSString *username = _AdminUserName.text;
     NSString *password = _AdminPassword.text;
